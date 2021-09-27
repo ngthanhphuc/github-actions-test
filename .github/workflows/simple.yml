@@ -17,3 +17,11 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windows-command:
+      runs-on: windows-latest
+      steps:
+        - name: Directpry PowerShell
+          run: Get-Location
+        - name: Directpry Bash
+          run: pwd
+          shell: bash
