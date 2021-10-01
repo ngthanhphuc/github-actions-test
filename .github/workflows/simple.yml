@@ -19,6 +19,7 @@ jobs:
         shell: python
   run-windows-commnad:
     runs-on: windows-latest
+    needs: ['run-shell-commnad']
     steps:
       - name: Directpry PowerShell
         run: Get-Location
